@@ -1,0 +1,118 @@
+.items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:95%;
+    margin:auto;
+    margin-top: 1rem;
+    &:hover{
+        background-color: rgb(197, 188, 188);
+    }
+    .item-img{
+        flex:0.2;
+        img{
+            object-fit: contain;
+            height: 10rem;
+            width: 100%;
+            &:hover{
+                transform: scale(1.5);
+                // position: relative;
+                // left:300px;
+            }
+        }
+    }
+    .item-info{
+        flex:0.3;
+        padding-left: 10px;
+        h3{
+            color:black;
+            &:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+    }
+    .item-units{
+        flex:0.2;
+        display: flex;
+        align-items: center;
+        margin:0 10px;
+        &:hover{
+            cursor: pointer;
+        }
+        .item-quantity{
+            border:1px solid black;
+            padding:5px;
+            height: fit-content;
+            border-radius: 10px;
+            text-align: center;
+            width:50px;
+        }
+    }
+    .item-price{
+        flex:0.2;
+        font-weight: bold;
+
+    }
+    .item-remove{
+        flex:0.1;
+        color:red;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+  @media(max-width:768px){
+      flex-direction: column;
+      margin-top: .3rem;
+      .item-img{
+        flex:0.2;
+        img{
+            height: 5rem;
+            width: 100%;
+        }
+    }
+    .item-info{
+        flex:0.3;
+        h3{
+            color:black;
+            font-size: 14px;
+            &:hover{
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+    }
+    .item-units{
+        flex:0.2;
+        display: flex;
+        align-items: center;
+        margin:0 10px;
+        &:hover{
+            cursor: pointer;
+        }
+        .item-quantity{
+            border:1px solid black;
+            padding:5px;
+            height: fit-content;
+            border-radius: 10px;
+            text-align: center;
+            width:50px;
+        }
+    }
+    .item-price{
+        flex:0.2;
+        font-weight: bold;
+
+    }
+    .item-remove{
+        flex:0.1;
+        color:red;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+      
+  } 
+}
